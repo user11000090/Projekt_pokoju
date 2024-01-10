@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn78plp6a2abj"]
+
+[ext_resource type="Script" path="res://ruch.gd" id="1_1ur1f"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_0gj54"]
+radius = 0.1
+
+[node name="Node" type="Node3D"]
+
+[node name="CharacterBody" type="CharacterBody3D" parent="."]
+script = ExtResource("1_1ur1f")
+
+[node name="CollisionShape" type="CollisionShape3D" parent="CharacterBody"]
+shape = SubResource("SphereShape3D_0gj54")
+
+[node name="Node3D" type="Node3D" parent="CharacterBody"]
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody/Node3D"]
+fov = 62.526
