@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://cciap0krklkd2"]
+
+[ext_resource type="PackedScene" uid="uid://j8enwwh32l12" path="res://nowa_sofa.dae" id="1_2ifov"]
+[ext_resource type="Texture2D" uid="uid://dlk6aelgnoayq" path="res://materials/kolor_1_1.jpg" id="2_g3mnf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4c28h"]
+albedo_texture = ExtResource("2_g3mnf")
+metallic_specular = 0.0
+roughness = 0.7
+uv1_scale = Vector3(0.24, 0.24, 0.24)
+uv1_triplanar = true
+
+[node name="nowa_sofa" instance=ExtResource("1_2ifov")]
+
+[node name="SketchUp" parent="." index="0"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_4c28h")
+
+[node name="group_0" parent="SketchUp" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.21117e-08, 0, -1.21116e-08, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_4c28h")
+
+[node name="group_0_001" parent="SketchUp" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.21117e-08, 0, -1.21116e-08, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_4c28h")
+
+[node name="group_0_002" parent="SketchUp" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.21117e-08, 0, -1.21116e-08, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_4c28h")
+
+[node name="group_0_004" parent="SketchUp" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.21117e-08, 0, -1.21116e-08, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_4c28h")
+
+[node name="group_0_005" parent="SketchUp" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.21117e-08, 0, -1.21116e-08, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_4c28h")
+
+[node name="group_0_006" parent="SketchUp" index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.21117e-08, 0, -1.21116e-08, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_4c28h")
+
+[node name="group_0_007" parent="SketchUp" index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.21117e-08, 0, -1.21116e-08, 1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_4c28h")
+
+[node name="group_0_011" parent="SketchUp" index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.21117e-08, 0, -1.21116e-08, 1, 0, 0, 0)
+
+[node name="group_0_012" parent="SketchUp" index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.21117e-08, 0, -1.21116e-08, 1, 0, 0, 0)
