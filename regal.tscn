@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://cu5iw23iusyoc"]
+
+[ext_resource type="PackedScene" uid="uid://yutiepcmamt6" path="res://regal.dae" id="1_ur7mw"]
+[ext_resource type="Texture2D" uid="uid://dx32mfhejmigy" path="res://materials/wood1.JPG" id="2_q3lqe"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6y3th"]
+albedo_texture = ExtResource("2_q3lqe")
+metallic_specular = 0.15
+
+[node name="regal" instance=ExtResource("1_ur7mw")]
+
+[node name="SketchUp" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_6y3th")

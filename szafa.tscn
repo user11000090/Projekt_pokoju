@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://dt7ih1iudyetr"]
+
+[ext_resource type="PackedScene" uid="uid://c0lkoej46e0do" path="res://szafa.dae" id="1_c3ybp"]
+[ext_resource type="Texture2D" uid="uid://dx32mfhejmigy" path="res://materials/wood1.JPG" id="2_04apx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wxfs4"]
+albedo_texture = ExtResource("2_04apx")
+metallic_specular = 0.0
+uv1_scale = Vector3(0.2, 0.2, 0.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kwbv5"]
+metallic_specular = 0.25
+roughness = 0.4
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j3p0f"]
+albedo_color = Color(0.47451, 0.47451, 0.47451, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ykc2e"]
+albedo_color = Color(0.52549, 0.52549, 0.52549, 1)
+metallic_specular = 0.22
+roughness = 0.7
+
+[node name="szafa" instance=ExtResource("1_c3ybp")]
+
+[node name="SketchUp" parent="." index="0"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, 0, 0.0121398, 0)
+material_override = SubResource("StandardMaterial3D_wxfs4")
+
+[node name="SketchUp_002" parent="." index="2"]
+material_override = SubResource("StandardMaterial3D_kwbv5")
+
+[node name="SketchUp_003" parent="." index="3"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, 0, 0.0121398, 0)
+material_override = SubResource("StandardMaterial3D_wxfs4")
+
+[node name="SketchUp_006" parent="." index="6"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, 0, 0.0121398, 0)
+material_override = SubResource("StandardMaterial3D_wxfs4")
+
+[node name="SketchUp_007" parent="." index="7"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, 0, 0.0121398, 0)
+material_override = SubResource("StandardMaterial3D_j3p0f")
+
+[node name="SketchUp_008" parent="." index="8"]
+material_override = SubResource("StandardMaterial3D_ykc2e")
