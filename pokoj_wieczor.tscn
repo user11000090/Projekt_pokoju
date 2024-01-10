@@ -1,0 +1,147 @@
+[gd_scene load_steps=14 format=3 uid="uid://chnf4xno0t6tp"]
+
+[ext_resource type="PackedScene" uid="uid://waguna45467q" path="res://pokoj_szablon.tscn" id="1_oj2si"]
+[ext_resource type="PackedScene" uid="uid://dn78plp6a2abj" path="res://char.tscn" id="2_ui0a5"]
+[ext_resource type="Texture2D" uid="uid://bwei81ygu3bfy" path="res://landscape.jpg" id="3_l2vri"]
+[ext_resource type="PackedScene" uid="uid://du8hve6fwgboi" path="res://lustro.tscn" id="4_rvjx2"]
+[ext_resource type="PackedScene" uid="uid://dt7ih1iudyetr" path="res://szafa.tscn" id="5_2g5iq"]
+[ext_resource type="PackedScene" uid="uid://cu5iw23iusyoc" path="res://regal.tscn" id="6_ta6gp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y6qtb"]
+transparency = 1
+albedo_color = Color(0.913725, 0.894118, 0.803922, 1)
+metallic_specular = 0.24
+roughness = 0.58
+emission_enabled = true
+emission = Color(0.886275, 0.882353, 0.85098, 1)
+emission_energy_multiplier = 4.7
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_72bfe"]
+size = Vector3(0.820708, 2.21208, 0.443321)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0pi75"]
+size = Vector3(1.43008, 2.21208, 0.680561)
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_sysji"]
+panorama = ExtResource("3_l2vri")
+
+[sub_resource type="Sky" id="Sky_xf0on"]
+sky_material = SubResource("PanoramaSkyMaterial_sysji")
+
+[sub_resource type="Environment" id="Environment_n6gvq"]
+background_mode = 2
+background_energy_multiplier = 0.15
+sky = SubResource("Sky_xf0on")
+sky_custom_fov = 70.0
+sky_rotation = Vector3(0, 1.8326, 0)
+ambient_light_source = 2
+ambient_light_color = Color(0.45098, 0.45098, 0.45098, 1)
+reflected_light_source = 1
+tonemap_mode = 2
+tonemap_exposure = 0.5
+ssr_enabled = true
+adjustment_brightness = 0.97
+
+[sub_resource type="BoxMesh" id="BoxMesh_mfpcq"]
+size = Vector3(0.125, 2.865, 4.985)
+
+[node name="Node3D" instance=ExtResource("1_oj2si")]
+
+[node name="SketchUp_502" parent="." index="161"]
+material_override = SubResource("StandardMaterial3D_y6qtb")
+
+[node name="SketchUp_501" parent="." index="162"]
+material_override = SubResource("StandardMaterial3D_y6qtb")
+
+[node name="SketchUp_500" parent="." index="163"]
+material_override = SubResource("StandardMaterial3D_y6qtb")
+
+[node name="SketchUp_491" parent="." index="171"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, -1.194, 1.055, 10.875)
+
+[node name="instance_11_001" parent="SketchUp_491" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120.51, -41.4146, -636.057)
+
+[node name="instance_14_003" parent="SketchUp_491" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 209.504, -41.4146, -635.505)
+
+[node name="SketchUp_011" parent="." index="329"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, -1.684, 0.525, 2.87017)
+visible = false
+
+[node name="SketchUp_010" parent="." index="330"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, -1.684, 0.525, 2.87017)
+visible = false
+
+[node name="SketchUp_009" parent="." index="331"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, -1.684, 0.525, 2.87017)
+visible = false
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="StaticBody3D" index="10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.31197, 1.14953, -1.24406)
+shape = SubResource("BoxShape3D_72bfe")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="StaticBody3D" index="11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.54025, 1.14953, -1.31411)
+shape = SubResource("BoxShape3D_0pi75")
+
+[node name="Node" parent="." index="351" instance=ExtResource("2_ui0a5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.329, 1.54, -1.933)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="352"]
+environment = SubResource("Environment_n6gvq")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="353"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3711, 2.37225, -3.52353)
+light_color = Color(0.862745, 0.823529, 0.745098, 1)
+light_energy = 0.6
+light_specular = 0.0
+shadow_enabled = true
+shadow_bias = 0.05
+shadow_blur = 1.5
+omni_range = 6.0
+omni_attenuation = 0.499999
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="." index="354"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.36023, 1.49698, -3.41475)
+light_color = Color(0.862745, 0.823529, 0.745098, 1)
+light_specular = 0.0
+shadow_opacity = 0.8
+shadow_blur = 1.5
+omni_range = 3.285
+omni_attenuation = 0.63728
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." index="355"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.51133, 2.35338, -3.37619)
+light_color = Color(0.862745, 0.823529, 0.745098, 1)
+light_energy = 0.6
+light_specular = 0.0
+shadow_enabled = true
+shadow_bias = 0.05
+shadow_blur = 1.5
+omni_range = 6.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="." index="356"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2033, 2.35338, -3.36164)
+light_color = Color(0.862745, 0.823529, 0.745098, 1)
+light_energy = 0.6
+light_specular = 0.0
+shadow_enabled = true
+shadow_bias = 0.05
+shadow_blur = 1.5
+omni_range = 6.0
+omni_attenuation = 0.499999
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="." index="357"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.47369, 1.19624, -3.52312)
+mesh = SubResource("BoxMesh_mfpcq")
+
+[node name="lustro" parent="." index="358" instance=ExtResource("4_rvjx2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.59278, 7.07805e-08, -1.65218)
+
+[node name="szafa" parent="." index="359" instance=ExtResource("5_2g5iq")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.43513, -4.84288e-08, -1.5896)
+
+[node name="regal" parent="." index="360" instance=ExtResource("6_ta6gp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.44589, -4.84288e-08, -1.06405)
