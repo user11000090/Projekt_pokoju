@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=3 uid="uid://djgurxsqismpx"]
+
+[ext_resource type="Script" path="res://menu_script.gd" id="1_q5x5o"]
+[ext_resource type="Texture2D" uid="uid://f6k0y3tqpk4s" path="res://dzień.png" id="2_t31kk"]
+[ext_resource type="Texture2D" uid="uid://dcdtu7w5b3wvb" path="res://wieczór.png" id="3_lkn1x"]
+[ext_resource type="Texture2D" uid="uid://cio4nsa75ggwu" path="res://materials/p__tno.jpg" id="4_aq8v5"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q5x5o")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = -33.0
+offset_right = 34.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="dzien" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 190)
+layout_mode = 2
+text = "dzień"
+icon = ExtResource("2_t31kk")
+alignment = 0
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="wieczor" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 190)
+layout_mode = 2
+text = "wieczór"
+icon = ExtResource("3_lkn1x")
+alignment = 0
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="PTno" type="Sprite2D" parent="."]
+modulate = Color(0.141176, 0.141176, 0.258824, 1)
+show_behind_parent = true
+position = Vector2(680, 391)
+scale = Vector2(1.32685, 1.26944)
+texture = ExtResource("4_aq8v5")
+
+[connection signal="pressed" from="VBoxContainer/dzien" to="." method="_on_button_pressed"]
+[connection signal="child_entered_tree" from="VBoxContainer/wieczor" to="." method="_on_wieczór_child_entered_tree"]
+[connection signal="pressed" from="VBoxContainer/wieczor" to="." method="_on_wieczor_pressed"]

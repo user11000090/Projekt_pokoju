@@ -1,0 +1,110 @@
+[gd_scene load_steps=3 format=3 uid="uid://fg46bllxqau2"]
+
+[ext_resource type="PackedScene" uid="uid://cml8vvpmg6d40" path="res://listwy.dae" id="1_wtc5q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2lk5"]
+cull_mode = 2
+metallic_specular = 0.0
+
+[node name="listwy" instance=ExtResource("1_wtc5q")]
+
+[node name="SketchUp_001" parent="." index="0"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, -0.321576, 0, 0.547117)
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0" parent="SketchUp_001" index="0"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_001" parent="SketchUp_001" index="1"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_002" parent="SketchUp_001" index="2"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_004" parent="SketchUp_001" index="3"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_006" parent="SketchUp_001" index="5"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_007" parent="SketchUp_001" index="6"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_011" parent="SketchUp_001" index="7"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_012" parent="SketchUp_001" index="8"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_018" parent="SketchUp_001" index="9"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_019" parent="SketchUp_001" index="10"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_020" parent="SketchUp_001" index="11"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_021" parent="SketchUp_001" index="12"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_022" parent="SketchUp_001" index="13"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_023" parent="SketchUp_001" index="14"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_024" parent="SketchUp_001" index="15"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_025" parent="SketchUp_001" index="16"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_026" parent="SketchUp_001" index="17"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_027" parent="SketchUp_001" index="18"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="group_0_028" parent="SketchUp_001" index="19"]
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="SketchUp_002" parent="." index="1"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, -0.321576, 0, 0.547117)
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="SketchUp_003" parent="." index="2"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, -0.321576, 0, 0.547117)
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="SketchUp_004" parent="." index="3"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, -0.321576, 0, 0.547117)
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="SketchUp_005" parent="." index="4"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, -0.321576, 0, 0.547117)
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="SketchUp_006" parent="." index="5"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, -0.321576, 0, 0.547117)
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="SketchUp_007" parent="." index="6"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, -0.321576, 0, 0.547117)
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="SketchUp_008" parent="." index="7"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, -0.321576, 0, 0.547117)
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="SketchUp_009" parent="." index="8"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, -0.321576, 0, 0.547117)
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="SketchUp_010" parent="." index="9"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, -0.321576, 0, 0.547117)
+material_override = SubResource("StandardMaterial3D_r2lk5")
+
+[node name="SketchUp_011" parent="." index="10"]
+transform = Transform3D(0.0254, 0, 0, 0, 0.0254, 0, 0, 0, 0.0254, -0.321576, 0, 0.547117)
+material_override = SubResource("StandardMaterial3D_r2lk5")
